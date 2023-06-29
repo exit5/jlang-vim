@@ -25,8 +25,8 @@ I'd like to embed the REPL directly into a buffer at some point.
 Sort of like how SLIMV works.
 
 ## How do I install this?
-I would just put it in `$VIMRUNTIME/pack/whatever/start/jlang-vim`. You
-can name the `whatever` part in that path _whatever_ you want, by the way. If you want to add it manually, put it at `$VIMRUNTIME/pack/whatever/opt/jlang-vim` and `packadd` it from your `.vimrc`. Consult the documentation if you're not sure what the aforementioned sentences mean.
+I would just put it in `$HOME/.vim/pack/whatever/start/jlang-vim`. You
+can name the `whatever` part in that path _whatever_ you want, by the way. If you want to add it manually, put it at `$HOME/.vim/pack/whatever/opt/jlang-vim` and `packadd` it from your `.vimrc`. Consult the documentation if you're not sure what the aforementioned sentences mean.
 
 Assuming this plugin is organized correctly, I'm sure your favorite
 package manager will be able to handle it as well.
