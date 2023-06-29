@@ -1,7 +1,9 @@
 # jlang-vim
 
 ## What?
-Vim "support" and pseudo-REPL for the J Language
+Vim "support" and pseudo-REPL for the J Language. Works on Linux and
+macOS. Ought to be easily expanded to any other Unix-workalike, but
+until then it's just those.
 
 ## Why?
 I've never written a Vim plugin before. It's a learning exercise, and I
@@ -11,7 +13,7 @@ keybindings, I thought it would be a good opportunity to write something
 portable and semi-polished while making learning J even more enjoyable.
 
 ## What can it do?
-Not a whole lot. It also has a couple remappings for piping to
+Not a whole lot. It has a couple remappings for piping to
 `jconsole`. This is useful for sending visually highlighted lines
 directly to `jconsole` or sending the whole buffer entirely.
 
@@ -55,8 +57,6 @@ installed, there is usually a `jconsole` symlinked to to the `JConsole`
 management and monitoring application for Java. Even the [J
 Wiki](https://code.jsoftware.com/wiki/System/Installation/Linux#The_Name_of_the_J_console_binary)
 suggests this renaming/symlinking step.
-
-Just do it, it'll save you a headache.
 
 Or you could point `g:JconsoleBin` to wherever you installed it. Up to
 you.
