@@ -1,0 +1,57 @@
+*jlang-vim* J language pseudo-REPL for VIM
+                        ____
+=====================================================================
+CONTENTS                                              *JContents*
+
+    1. Config ......................................... ❘JConfig❘
+    2. License ....................................... ❘JLicense❘
+
+======================================================================
+Section 1: Config                                        *JConfig*
+
+----------------------------------------------------------------------
+                                          *'g:JconsoleBin'*
+Values: {string}
+Default: 'ijconsole'
+
+The path to the jconsole binary >
+    let g:JconsoleBin = $HOME."/.local/j9.4/bin/jconsole"
+    let g:JconsoleBin = "/usr/bin/jconsole"
+<
+                                          *'g:JconsoleLeader'*
+Values: {string}
+Default: '..'
+
+The mapleader that prefixes the sending command keys >
+    let g:JconsoleLeader = ".."
+    let g:JconsoleLeader = ",,"
+<
+                                          *'g:JconsoleSelection'*
+Values: {string}
+Default: '.'
+
+The key for sending a section of highlighted code in Visual mode to jconsole >
+    let g:JconsoleSelection = ","
+    let g:JconsoleSelection = "i"
+<
+
+                                          *'g:JconsoleAll'*
+Values: {string}
+Default: '.'
+
+The key for sending the entire buffer in Normal mode to jconsole >
+    let g:JconsoleAll = "."
+    let g:JconsoleAll = "u"
+<
+*'g:j_strip_whitespace'*
+Values: 0, 1
+Default: ''
+
+To enable whitespace stripping >
+    let g:j_strip_whitespace = 1
+<
+
+======================================================================
+Section 2: License                                      *JLicense*
+
+This plugin is licensed under the WTFPL license.
