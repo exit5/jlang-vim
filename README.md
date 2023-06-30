@@ -65,6 +65,6 @@ you.
 You got me there.
 
 ## TODO
-- Add en embedded `jconsole` REPL
+- Add an embedded `jconsole` REPL
 - Install J at the behest of the user
 - Read up on the LSP spec... :^)
