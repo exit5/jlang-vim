@@ -20,6 +20,10 @@ function! SetupMaps() abort
     let g:JconsoleAll = '.'
   endif
 
+  if !exists("g:JconsoleRepl")
+    let g:JconsoleRepl = 'r'
+  endif
+
   if !exists("g:JconsoleBin")
     if executable('ijconsole')
       let g:JconsoleBin = 'ijconsole'
@@ -37,6 +41,7 @@ function! SetupMaps() abort
       let g:mapleader = g:JconsoleLeader
       exec "xnoremap <leader>" . g:JconsoleSelection . " <Esc>:'<,'>:w !" . g:JconsoleBin . "<CR>"
       exec "nnoremap <leader>" . g:JconsoleAll . " <Esc>:%:w !" . g:JconsoleBin . "<CR>"
+      exec "nnoremap <leader>" . g:JconsoleRepl . "!" . g:JconsoleBin . " %<CR>"
     endif
   endif
   return
