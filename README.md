@@ -18,7 +18,7 @@ Not a whole lot. It has a couple remappings for piping to
 directly to `jconsole` or sending the whole buffer entirely.
 
 I also borrowed a whitespace stripper function from
-[dhall-vim](https://github.com/vmchale). I don't understand licenses
+[dhall-vim](https://github.com/vmchale/dhall-vim). I don't understand licenses
 very well, I hope the author is okay with that.
 
 I'd like to embed the REPL directly into a buffer at some point.
