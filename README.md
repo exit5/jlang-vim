@@ -49,6 +49,7 @@ and the key of your choosing to send Normal and Visual mode code to
 - `g:JconsoleLeader`: default `..`
 - `g:JconsoleAll`: default `.`
 - `g:JconsoleSelection`: default `,`
+- `g:JconsoleRepl`: default `r`
 - `g:JconsoleBin`: default `ijconsole`
 
 Please note in particular that this plugin looks for

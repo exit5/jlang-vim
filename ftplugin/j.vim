@@ -41,7 +41,7 @@ function! SetupMaps() abort
       let g:mapleader = g:JconsoleLeader
       exec "xnoremap <leader>" . g:JconsoleSelection . " <Esc>:'<,'>:w !" . g:JconsoleBin . "<CR>"
       exec "nnoremap <leader>" . g:JconsoleAll . " <Esc>:%:w !" . g:JconsoleBin . "<CR>"
-      exec "nnoremap <leader>" . g:JconsoleRepl . "!" . g:JconsoleBin . " %<CR>"
+      exec "nnoremap <leader>" . g:JconsoleRepl . " <Esc>:!" . g:JconsoleBin . " %<CR>"
     endif
   endif
   return
