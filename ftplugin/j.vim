@@ -36,8 +36,8 @@ function! SetupMaps() abort
   endif
 
   if executable('uname')
-    let b:osname = systemlist('uname')[0]
-    if ((b:osname == 'Darwin') || (b:osname == 'Linux'))
+    let s:osname = systemlist('uname')[0]
+    if (s:osname =~ 'Darwin\|Linux\|OpenBSD')
       let g:mapleader = g:JconsoleLeader
       exec "xnoremap <leader>" . g:JconsoleSelection . " <Esc>:'<,'>:w !" . g:JconsoleBin . "<CR>"
       exec "nnoremap <leader>" . g:JconsoleAll . " <Esc>:%:w !" . g:JconsoleBin . "<CR>"
