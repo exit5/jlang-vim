@@ -38,15 +38,15 @@ J](https://code.jsoftware.com/wiki/System/Installation).
 
 The default mappings are as follows:
 
-- In Normal mode, press `...` to send the entire buffer to `jconsole`'s `stdin`
-- In Visual mode, press `..,` to send the selection to `jconsole`'s
+- In Normal mode, press `,,,` to send the entire buffer to `jconsole`'s `stdin`
+- In Visual mode, press `,,.` to send the selection to `jconsole`'s
   `stdin`
 
 The following settings are available. You can customize a `mapleader`
 and the key of your choosing to send Normal and Visual mode code to
 `jconsole`.
 
-- `g:JconsoleLeader`: default `..`
+- `g:JconsoleLeader`: default `,,`
 - `g:JconsoleAll`: default `.`
 - `g:JconsoleSelection`: default `,`
 - `g:JconsoleRepl`: default `r`

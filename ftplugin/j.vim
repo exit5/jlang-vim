@@ -9,15 +9,15 @@ setlocal commentstring=NB.\ %s
 
 function! SetupMaps() abort
   if !exists("g:JconsoleLeader")
-    let g:JconsoleLeader = '..'
+    let g:JconsoleLeader = ',,'
   endif
 
   if !exists("g:JconsoleSelection")
-    let g:JconsoleSelection = ','
+    let g:JconsoleSelection = '.'
   endif
 
   if !exists("g:JconsoleAll")
-    let g:JconsoleAll = '.'
+    let g:JconsoleAll = ','
   endif
 
   if !exists("g:JconsoleRepl")
@@ -39,9 +39,9 @@ function! SetupMaps() abort
     let s:osname = systemlist('uname')[0]
     if (s:osname =~ 'Darwin\|Linux\|OpenBSD')
       let g:mapleader = g:JconsoleLeader
-      exec "xnoremap <leader>" . g:JconsoleSelection . " <Esc>:'<,'>:w !" . g:JconsoleBin . "<CR>"
-      exec "nnoremap <leader>" . g:JconsoleAll . " <Esc>:%:w !" . g:JconsoleBin . "<CR>"
-      exec "nnoremap <leader>" . g:JconsoleRepl . " <Esc>:!" . g:JconsoleBin . " %<CR>"
+      exec "xnoremap <silent> <leader>" . g:JconsoleSelection . " <Esc>:'<,'>:w !" . g:JconsoleBin . "<CR>"
+      exec "nnoremap <silent> <leader>" . g:JconsoleAll . " <Esc>:%:w !" . g:JconsoleBin . "<CR>"
+      exec "nnoremap <silent> <leader>" . g:JconsoleRepl . " <Esc>:!" . g:JconsoleBin . " %<CR>"
     endif
   endif
   return
@@ -56,7 +56,7 @@ function! StripTrailingWhitespace()
 endfunction
 
 if exists('g:jlang_strip_whitespace')
-    if g:j_strip_whitespace == 1
+    if g:jlang_strip_whitespace == 1
         au BufWritePre *.ijs silent! call StripTrailingWhitespace()
     endif
 endif
