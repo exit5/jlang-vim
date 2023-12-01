@@ -1,9 +1,10 @@
 # jlang-vim
 
 ## What?
-Vim "support" and pseudo-REPL for the J Language. Works on Linux and
-macOS. Ought to be easily expanded to any other Unix-workalike, but
-until then it's just those.
+Vim "support" and pseudo-REPL for the J Language. Works on Linux,
+OpenBSD, and macOS.
+Ought to be easily expanded to any other Unix-workalike, but until then
+it's just those.
 
 ## Why?
 I've never written a Vim plugin before. It's a learning exercise, and I
